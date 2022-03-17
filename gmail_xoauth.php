@@ -103,7 +103,7 @@ $mail->setOAuth(
 
 //Set who the message is to be sent from
 //For gmail, this generally needs to be the same as the user you logged in as
-$mail->setFrom($email, 'First Last');
+$mail->setFrom($email, 'tbas nsuc');
 
 //Set who the message is to be sent to
 $mail->addAddress('jbwhite2@ncsu.edu', 'Jim White');
@@ -114,7 +114,7 @@ $mail->Subject = 'PHPMailer GMail XOAUTH2 SMTP test';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 $mail->CharSet = PHPMailer::CHARSET_UTF8;
-$mail->msgHTML(file_get_contents('contentsutf8.html'), __DIR__);
+$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
