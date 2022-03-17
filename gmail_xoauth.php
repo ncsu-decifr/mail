@@ -56,7 +56,7 @@ $mail->AuthType = 'XOAUTH2';
 //Start Option 1: Use league/oauth2-client as OAuth2 token provider
 //Fill in authentication details here
 //Either the gmail account owner, or the user that gave consent
-$email = 'someone@gmail.com';
+$email = 'tbasncsu@gmail.com';
 
 $ini_array = parse_ini_file("mail.ini");
 
@@ -95,18 +95,18 @@ $mail->setOAuth(
 //Option 2: Another OAuth library as OAuth2 token provider
 //Set up the other oauth library as per its documentation
 //Then create the wrapper class that implementations OAuthTokenProvider
-$oauthTokenProvider = new MyOAuthTokenProvider( /* Email, ClientId, ClientSecret, etc. */);
+// $oauthTokenProvider = new MyOAuthTokenProvider( /* Email, ClientId, ClientSecret, etc. */);
 
-//Pass the implementation of OAuthTokenProvider to PHPMailer
-$mail->setOAuth($oauthTokenProvider);
-//End Option 2
+// //Pass the implementation of OAuthTokenProvider to PHPMailer
+// $mail->setOAuth($oauthTokenProvider);
+// //End Option 2
 
 //Set who the message is to be sent from
 //For gmail, this generally needs to be the same as the user you logged in as
 $mail->setFrom($email, 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('someone@gmail.com', 'John Doe');
+$mail->addAddress('jbwhite2@ncsu.edu', 'Jim White');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail XOAUTH2 SMTP test';
