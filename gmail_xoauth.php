@@ -103,7 +103,7 @@ $mail->setOAuth(
 
 //Set who the message is to be sent from
 //For gmail, this generally needs to be the same as the user you logged in as
-$mail->setFrom($email, 'tbas nsuc');
+$mail->setFrom($email, 'tbas ncsu');
 
 //Set who the message is to be sent to
 $mail->addAddress('jbwhite2@ncsu.edu', 'Jim White');
