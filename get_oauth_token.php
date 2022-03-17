@@ -1,7 +1,5 @@
 <?php
 
-$ini_array = parse_ini_file("mail.ini");
-
 /**
  * PHPMailer - PHP email creation and transport class.
  * PHP Version 5.5
@@ -78,8 +76,10 @@ if (!in_array($providerName, ['Google', 'Microsoft', 'Yahoo'])) {
 
 //These details are obtained by setting up an app in the Google developer console,
 //or whichever provider you're using.
+$ini_array = parse_ini_file("mail.ini");
+
 $clientId = $ini_array['clientId'];
-$clientSecret =  $ini_array['clientSecret'];
+$clientSecret = $ini_array['clientSecret'];
 
 //If this automatic URL doesn't work, set it yourself manually to the URL of this script
 $redirectUri = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
