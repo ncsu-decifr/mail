@@ -2,6 +2,8 @@
 phpmailer with oauth2
 
 for php 7
+'./configure' '--with-openssl' '--enable-fpm' '--with-pgsql' '--with-pdo-pgsql'
+
 
 
 http://localhost/mail/get_oauth_token.php
