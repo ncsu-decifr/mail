@@ -1,6 +1,8 @@
 # mail
 phpmailer with oauth2
 
+for php 7
+
 
 http://localhost/mail/get_oauth_token.php
 
